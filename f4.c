@@ -8,7 +8,7 @@ int main(void)
     int numbersArray[10] = {};
     int highestNumber = 0;
     int index;
-    for (int i = 0; i <= sizeof(numbersArray) / sizeof(numbersArray[0]); i++)
+    for (int i = 0; i <= sizeof(numbersArray) / sizeof(numbersArray[0]) - 1; i++)
     {
         printf("Type a number and hit Enter: ");
 
@@ -25,10 +25,6 @@ int main(void)
             continue;
         }
     }
-
-    // for(int i = 0; i <= sizeof(numbersArray) / sizeof(numbersArray[0]); i++) {
-    // printf("%d \n", numbersArray[i]);
-    // }
 
     printf("The highest value is %d at index %d \n", highestNumber, index);
     return 0;
