@@ -1,7 +1,7 @@
 /*
  * FILE : f4.cpp
  * PROJECT : SENG1000 - Focus #4
- * PROGRAMMER :
+ * PROGRAMMER : Fawaz Dogbe (8982570)
  * FIRST VERSION : 2024-02-14
  * DESCRIPTION :
  * The functions in this file are used to …
