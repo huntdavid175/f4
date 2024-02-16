@@ -1,12 +1,3 @@
-/*
- * FILE : f4.cc
- * PROJECT : SENG1000 - Focus #4
- * PROGRAMMER :
- * FIRST VERSION : 2024-02-14
- * DESCRIPTION :
- * The functions in this file are used to …
- */
-
 #include <stdio.h>
 
 int getNum(void);
@@ -14,47 +5,34 @@ int getNum(void);
 int main(void)
 {
 
-    int numbersArray[10] = {}; // Initialize array here
-    int highestNumber = 0;     // Stores the current highest number
-    int index;                 // Stores the index of the highest number
+    int numbersArray[10] = {};
+    int highestNumber = 0;
+    int index;
 
-    printf("Type a number and hit Enter\n "); // Request for user input
-
-    /* Loop based to fill array and check for highest number and number index */
+    printf("Type a number and hit Enter\n ");
     for (int i = 0; i <= sizeof(numbersArray) / sizeof(numbersArray[0]) - 1; i++)
     {
         int inputNumber = getNum();
-        numbersArray[i] = inputNumber; // Fill the array with current input number
+        numbersArray[i] = inputNumber;
 
-        /*Checks if current input number is higher than the current
-        highest number*/
         if (inputNumber > highestNumber)
         {
-            highestNumber = inputNumber; // Saves highest number if true
+            highestNumber = inputNumber;
             index = i;
         }
         else
         {
-            continue; // Continues with the loop if false
+            continue;
         }
     }
 
-    printf("The highest value is %d at index %d \n", highestNumber, index); // print the result
-
+    printf("The highest value is %d at index %d \n", highestNumber, index);
     return 0;
 }
 
 #pragma warning(disable : 4996) // required by Visual Studio
 
-//
-// FUNCTION : getNum
-// DESCRIPTION :
-// This function gets the user input
-// PARAMETERS :
-// void
-// RETURNS :
-// int: user input
-//
+/* This is a function to get user input*/
 int getNum(void)
 {
     /* the array is 121 bytes in size; we'll see in a later lecture how we can
