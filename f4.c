@@ -1,5 +1,5 @@
 /*
- * FILE : f4.cc
+ * FILE : f4.cpp
  * PROJECT : SENG1000 - Focus #4
  * PROGRAMMER :
  * FIRST VERSION : 2024-02-14
